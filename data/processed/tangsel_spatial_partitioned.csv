@@ -1,0 +1,28 @@
+source,location_name,latitude,longitude,confidence_score,ndvi,ndbi,bsi,dist_to_road_m,dist_to_river_m,building_density,open_burning_flag,h3_grid_micro,h3_block_macro,spatial_fold,split_role
+Google_Maps_POI,TPS3R CIPAYUNG 01,-6.3295474,106.7585284,0.9,0.1998,0.1314,0.395,174.8,629.2,0.589,1,898c1062687ffff,878c10626ffffff,2,TRAIN
+Google_Maps_POI,TPS 3R Flamboyan,-6.3579707,106.7311535,0.9,0.4303,0.1666,0.5441,428.3,721.1,0.799,0,898c1062587ffff,878c10625ffffff,3,TRAIN
+Google_Maps_POI,TPS 3R KSM Rumah Kompos Vila Pamulang Mas Tahap 2,-6.3280337,106.7236208,0.9,0.3428,-0.0791,0.1607,332.1,79.6,0.258,0,898c1062153ffff,878c10621ffffff,0,TEST
+Google_Maps_POI,TPS 3R Berseri Benda Baru,-6.3415269,106.7225557,0.9,0.2895,0.1734,0.2102,273.4,738.9,0.327,0,898c1062193ffff,878c10621ffffff,0,TEST
+Google_Maps_POI,Griya Bersih Asri TPS3R,-6.3548005,106.7291253,0.9,0.1124,-0.0233,0.1408,78.6,225.4,0.229,0,898c10625bbffff,878c10625ffffff,3,TRAIN
+Google_Maps_POI,TPA Cipeucang,-6.3250784,106.6591211,0.9,0.1124,-0.0707,0.2697,78.6,101.4,0.411,1,898c1062947ffff,878c10629ffffff,4,TRAIN
+Google_Maps_POI,TPST Abu & Co,-6.3190684,106.6592795,0.9,0.0732,0.327,0.2988,35.6,1139.9,0.453,1,898c1062bb3ffff,878c1062bffffff,0,TEST
+Google_Maps_POI,TPS 3R Chibar,-6.3252347,106.6877593,0.9,0.3965,0.3345,0.2448,391.1,1159.6,0.376,1,898c10628c3ffff,878c10628ffffff,1,TRAIN
+Google_Maps_POI,Jasa buang puing sampah proyek,-6.3113823,106.7605327,0.9,0.2904,0.2638,0.5012,274.5,974.9,0.739,1,898c10635b7ffff,878c10626ffffff,2,TRAIN
+Google_Maps_POI,Simpang Pak OGAH Pondok Aren,-6.2884449,106.7283636,0.9,0.3332,0.0371,0.2841,321.6,382.9,0.432,0,898c106040fffff,878c10604ffffff,0,TEST
+Google_Maps_POI,Jasa buang puing dan sampah proyek,-6.3207309,106.7681427,0.9,0.0582,-0.056,0.2492,19.1,139.8,0.383,1,898c10626c3ffff,878c10626ffffff,2,TRAIN
+Google_Maps_POI,Tempat Pembuangan Sampah Terpadu 3R Batan Indah,-6.3323225,106.6731365,0.9,0.438,0.2079,0.3696,436.8,829.0,0.553,1,898c10628a3ffff,878c10628ffffff,1,TRAIN
+Google_Maps_POI,ZAP Jasa Angkut Puing dan Sampah Proyek,-6.3576675,106.737099,0.9,0.383,0.0981,0.1848,376.3,542.2,0.292,1,898c1062593ffff,878c1070bffffff,3,TRAIN
+Google_Maps_POI,Pembuangan Sampah dan Urukan,-6.2773319,106.6754983,0.9,0.1349,-0.0451,0.489,103.4,168.4,0.721,1,898c1060c4bffff,878c1060effffff,1,TRAIN
+Google_Maps_POI,Pilah Sampah,-6.3050074,106.6627716,0.9,0.1227,0.1228,0.1543,90.0,606.8,0.248,1,898c1062b0bffff,878c1062bffffff,0,TEST
+Google_Maps_POI,EKSA JAYA / jasa buang angkut sampah puing proyek tanah galian Daun / jasa buang Barang bekas furniture,-6.3337684,106.6491162,0.9,0.1234,-0.0845,0.574,90.7,65.4,0.841,1,898c10629afffff,878c10629ffffff,4,TRAIN
+Google_Maps_POI,Gerobak sampah,-6.2714595,106.6757414,0.9,0.1717,0.3092,0.4752,143.9,1093.5,0.702,1,898c1060ebbffff,878c1060effffff,1,TRAIN
+Google_Maps_POI,Dinas Lingkungan Hidup Kota Tangerang Selatan,-6.3268671,106.6737331,0.9,0.2599,0.0165,0.2114,240.9,329.1,0.329,0,898c10628abffff,878c10628ffffff,1,TRAIN
+Google_Maps_POI,Alun-Alun Pondok Aren - Tangerang Selatan,-6.2740786,106.6929772,0.9,0.2228,0.1981,0.1225,200.1,803.5,0.204,0,898c1060147ffff,878c10601ffffff,2,TRAIN
+Google_Maps_POI,Jasa tukang angkut buang puing sampah proyek,-6.2802548,106.7202685,0.9,0.1665,0.0403,0.4951,138.1,391.3,0.73,0,898c10600d7ffff,878c10600ffffff,1,TRAIN
+Google_Maps_POI,Tanah Sewa,-6.2606443,106.7395701,0.9,0.2947,0.134,0.4452,279.2,636.1,0.659,1,898c106064fffff,878c10606ffffff,4,TRAIN
+Google_Maps_POI,Tanah dijual,-6.2729568,106.6913619,0.9,0.1058,0.146,0.4553,71.4,667.4,0.674,0,898c106017bffff,878c10601ffffff,2,TRAIN
+OpenStreetMap_Geocoded_Landmark,Pasar Ciputat,-6.3125598,106.7463458,0.8,0.1669,-0.0168,0.4748,138.5,242.2,0.701,1,898c1062283ffff,878c10622ffffff,4,TRAIN
+OpenStreetMap_Geocoded_Landmark,Lapangan Sunburst Serpong,-6.3004334,106.6659178,0.8,0.1965,0.3363,0.1541,171.2,1164.3,0.248,1,898c1062b4fffff,878c1062bffffff,0,TEST
+OpenStreetMap_Geocoded_Landmark,UIN Syarif Hidayatullah,-6.3067431,106.7545422,0.8,0.2324,0.2488,0.2849,210.7,935.8,0.433,0,898c10622d3ffff,878c10622ffffff,4,TRAIN
+OpenStreetMap_Geocoded_Landmark,Alun Alun Pamulang,-6.3443675,106.7350955,0.8,0.3641,0.3228,0.1733,355.5,1128.9,0.275,1,898c1062557ffff,878c10625ffffff,3,TRAIN
+OpenStreetMap_Geocoded_Landmark,Taman Kota 1 BSD,-6.2882235,106.6759854,0.8,0.1299,0.3027,0.517,97.9,1076.4,0.761,1,898c1060cc7ffff,878c1060cffffff,3,TRAIN
