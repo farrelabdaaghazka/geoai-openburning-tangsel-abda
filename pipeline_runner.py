@@ -10,6 +10,12 @@ from src.features.spatial_grid import assign_h3_grid
 from src.features.feature_builder import build_spatial_features
 from src.models.spatial_split import apply_spatial_block_split
 from src.models.causal_dml import estimate_causal_effect
+from src.analytics.monte_carlo_engine import run_monte_carlo_emissions
+from src.analytics.p_median_allocator import allocate_waste_facilities_p_median
+from src.visualization.plot_spatial_risk import (
+    plot_spatial_risk_and_facilities,
+    plot_emission_uncertainty_distribution
+)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -53,7 +59,7 @@ async def run_pipeline():
         .pipe(assign_h3_grid, resolution=config.h3_resolution_macro, col_name="h3_block_macro")
     )
 
-    # 4. Spatial Block Partitioning (GroupKFold)
+    # 4. Spatial Block Partitioning
     logger.info("Phase 4: Partitioning Dataset with Spatial Block Split...")
     df_final = apply_spatial_block_split(df_processed, "h3_block_macro", n_splits=5)
 
@@ -65,6 +71,13 @@ async def run_pipeline():
         outcome_col="open_burning_flag"
     )
 
+    # 6. Analytics: Monte Carlo Simulation & P-Median Optimization
+    logger.info("Phase 6A: Running Monte Carlo Emission Simulation (10.000 iterations)...")
+    mc_results = run_monte_carlo_emissions(df_final, n_simulations=10000)
+
+    logger.info("Phase 6B: Running P-Median Location-Allocation Optimization...")
+    df_final = allocate_waste_facilities_p_median(df_final, n_facilities=3)
+
     # Save Output Data
     output_path = "data/processed/tangsel_spatial_partitioned.csv"
     df_final.to_csv(output_path, index=False)
@@ -72,6 +85,16 @@ async def run_pipeline():
 
     print("\n--- CAUSAL DML MODEL RESULTS ---")
     print(causal_results)
+    
+    print("\n--- MONTE CARLO EMISSIONS ESTIMATE (CI 95%) ---")
+    print(mc_results)
+
+    # Phase 7: Generating Publication-Ready Figures
+    logger.info("Phase 7: Generating Publication Figures (High-DPI Maps & Emission Charts)...")
+    plot_spatial_risk_and_facilities(df_final, output_dir="data/figures")
+    plot_emission_uncertainty_distribution(output_dir="data/figures")
+
+    logger.info("Pipeline Execution Fully Completed!")
 
 if __name__ == "__main__":
     asyncio.run(run_pipeline())

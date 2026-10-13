@@ -51,3 +51,60 @@ def get_h3_neighbors(h3_index: str, ring_radius: int = 1) -> List[str]:
     except Exception as err:
         logger.error(f"Gagal mendapatkan tetangga H3 untuk index '{h3_index}': {err}")
     return []
+
+
+def generate_full_tangsel_h3_grid(min_lat: float = -6.38, max_lat: float = -6.25, 
+                                  min_lon: float = 106.63, max_lon: float = 106.78, 
+                                  resolution: int = 8) -> pd.DataFrame:
+    """
+    Membangkitkan seluruh grid heksagon H3 yang menutupi batas wilayah Tangerang Selatan.
+    Mengatasi masalah data yang terlalu sedikit (data sparsity) dengan menghasilkan
+    ruang analisis spasial yang utuh (full coverage).
+    """
+    boundary_polygon = [
+        (min_lat, min_lon),
+        (min_lat, max_lon),
+        (max_lat, max_lon),
+        (max_lat, min_lon)
+    ]
+    
+    # Menghasilkan sel H3 penutup
+    try:
+        if hasattr(h3, 'polygon_to_cells'):
+            # h3 v4.x
+            geojson_poly = {
+                "type": "Polygon",
+                "coordinates": [[[lon, lat] for lat, lon in boundary_polygon + [boundary_polygon[0]]]]
+            }
+            hexagons = list(h3.polygon_to_cells(geojson_poly, resolution))
+        elif hasattr(h3, 'polyfill'):
+            # h3 v3.x
+            geojson_poly = {
+                "type": "Polygon",
+                "coordinates": [[[lon, lat] for lat, lon in boundary_polygon + [boundary_polygon[0]]]]
+            }
+            hexagons = list(h3.polyfill(geojson_poly, resolution, geo_json=True))
+        else:
+            logger.warning("Fungsi polyfill H3 tidak ditemukan, menggunakan titik centroid fallback.")
+            hexagons = []
+    except Exception as e:
+        logger.error(f"Gagal membangkitkan grid H3 Tangsel: {e}")
+        hexagons = []
+
+    records = []
+    for h3_id in hexagons:
+        if hasattr(h3, 'cell_to_latlng'):
+            lat, lon = h3.cell_to_latlng(h3_id)
+        else:
+            lat, lon = h3.h3_to_geo(h3_id)
+            
+        records.append({
+            "h3_index": h3_id,
+            "latitude": lat,
+            "longitude": lon,
+            "location_name": f"H3 Grid Cell {h3_id[:8]}"
+        })
+
+    df_grid = pd.DataFrame(records)
+    logger.info(f"Berhasil membangkitkan {len(df_grid)} sel H3 Grid penutup wilayah Tangsel (Resolusi {resolution}).")
+    return df_grid

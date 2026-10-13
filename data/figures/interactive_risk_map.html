@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8fb4ebf2e8066e03c68e8768be07e5d2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8fb4ebf2e8066e03c68e8768be07e5d2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8fb4ebf2e8066e03c68e8768be07e5d2 = L.map(
+                "map_8fb4ebf2e8066e03c68e8768be07e5d2",
+                {
+                    center: [-6.308917768181818, 106.70644852727274],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_65015b681634c6652ed9534bf7535b1a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "OpenStreetMap",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_65015b681634c6652ed9534bf7535b1a.addTo(map_8fb4ebf2e8066e03c68e8768be07e5d2);
+        
+    
+            var tile_layer_ae88b8fa02b2de437e52a00d226b0dcb = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Google Satellite",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ae88b8fa02b2de437e52a00d226b0dcb.addTo(map_8fb4ebf2e8066e03c68e8768be07e5d2);
+        
+    
+            var feature_group_9b31d5c98a98468cfb413a40aaa6bfbe = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var polygon_beadc4abfc0ead976b0766849dae7fb9 = L.polygon(
+                [[106.7113444999155, -6.279770006992298], [106.71092724098494, -6.27803601431614], [106.70915096942545, -6.277599922203279], [106.70779196160434, -6.278897849634365], [106.70820924545149, -6.280631846341204], [106.70998551220362, -6.281067911586934], [106.7113444999155, -6.279770006992298]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_beadc4abfc0ead976b0766849dae7fb9.bindTooltip(
+                `<div>
+                     H3 Index: 898c10600abffff | Mean BSI: 0.544
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_ce726b2d9a7cd3a259cb0486c2768246 = L.polygon(
+                [[106.70727879384094, -6.25592718126773], [106.70686146929403, -6.254192706039849], [106.70508500871695, -6.253756347478682], [106.70372587749999, -6.255054491012248], [106.70414322696514, -6.256788970281273], [106.70591968272947, -6.257225301976239], [106.70727879384094, -6.25592718126773]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_ce726b2d9a7cd3a259cb0486c2768246.bindTooltip(
+                `<div>
+                     H3 Index: 898c1060353ffff | Mean BSI: 0.299
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_ef2765f0fdef3ba9e6e20f28ce4590fb = L.polygon(
+                [[106.72858096778157, -6.288895290891856], [106.72816386436516, -6.28716158578599], [106.72638787201976, -6.286725671318777], [106.72502898787855, -6.28802348884564], [106.72544611621912, -6.289757197999921], [106.72722210377722, -6.290193085579562], [106.72858096778157, -6.288895290891856]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_ef2765f0fdef3ba9e6e20f28ce4590fb.bindTooltip(
+                `<div>
+                     H3 Index: 898c106040fffff | Mean BSI: 0.552
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_2767ef596ba9609aa165b36c20c32113 = L.polygon(
+                [[106.67748466504621, -6.277983289325299], [106.67706712232831, -6.276249041110616], [106.67529039484344, -6.275812767477194], [106.67393121492314, -6.277110768883118], [106.67434878254006, -6.278845021082668], [106.6761255051787, -6.279281267892076], [106.67748466504621, -6.277983289325299]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_2767ef596ba9609aa165b36c20c32113.bindTooltip(
+                `<div>
+                     H3 Index: 898c1060c4bffff | Mean BSI: 0.185
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_acb24139deb3ddc7ad1cb7ef536e001b = L.polygon(
+                [[106.67685406678214, -6.289249780219905], [106.67643653386753, -6.2875157434777735], [106.67465986209787, -6.287079583326234], [106.67330072808987, -6.288377486738646], [106.67371828590137, -6.29011152745716], [106.67549495282444, -6.290547660787529], [106.67685406678214, -6.289249780219905]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_acb24139deb3ddc7ad1cb7ef536e001b.bindTooltip(
+                `<div>
+                     H3 Index: 898c1060cc7ffff | Mean BSI: 0.370
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_4cb857e9b1d88618fb17ad7f7be62c2c = L.polygon(
+                [[106.70446449390339, -6.237282525988246], [106.70404712108174, -6.235547676194029], [106.7022705175234, -6.235111111165007], [106.70091129160373, -6.236409422796783], [106.7013286893451, -6.238144276640855], [106.70310528808687, -6.238580814803956], [106.70446449390339, -6.237282525988246]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_4cb857e9b1d88618fb17ad7f7be62c2c.bindTooltip(
+                `<div>
+                     H3 Index: 898c1061c0fffff | Mean BSI: 0.205
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_51284463b39257c5acd41a02537d9cc6 = L.polygon(
+                [[106.72480120294955, -6.328742712919833], [106.72438412125813, -6.327009746637093], [106.7226083053784, -6.326574227152574], [106.72124957598098, -6.327871700826919], [106.72166668258824, -6.329604671125883], [106.72344249367754, -6.33004016373493], [106.72480120294955, -6.328742712919833]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_51284463b39257c5acd41a02537d9cc6.bindTooltip(
+                `<div>
+                     H3 Index: 898c1062153ffff | Mean BSI: 0.425
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_ab8b9974e53362d8dd4b90aaf8393f67 = L.polygon(
+                [[106.72322761313339, -6.3430317923754584], [106.72281053742246, -6.341299089963965], [106.7210347819575, -6.340863711095188], [106.71967610699572, -6.342161061509372], [106.72009320761939, -6.343893767925241], [106.72186895829255, -6.3443291199232], [106.72322761313339, -6.3430317923754584]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_ab8b9974e53362d8dd4b90aaf8393f67.bindTooltip(
+                `<div>
+                     H3 Index: 898c1062193ffff | Mean BSI: 0.359
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_77719ebc39ced69f4ba792d31a0d2bd5 = L.polygon(
+                [[106.74956672558068, -6.313617250529532], [106.74914982973416, -6.311884156736907], [106.74737425506237, -6.311448600135242], [106.74601558100004, -6.312746164236816], [106.74643250177778, -6.314479262090223], [106.74820807168707, -6.314914791781934], [106.74956672558068, -6.313617250529532]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_77719ebc39ced69f4ba792d31a0d2bd5.bindTooltip(
+                `<div>
+                     H3 Index: 898c1062283ffff | Mean BSI: 0.245
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_7caef7d4948aa54d0bbafe03a1f4e002 = L.polygon(
+                [[106.7567768218988, -6.3088625461460115], [106.75635997971752, -6.307129408590697], [106.7545844733997, -6.306693837486615], [106.75322581401805, -6.307991430858546], [106.7536426811351, -6.309724572487842], [106.75541818269853, -6.310160116671877], [106.7567768218988, -6.3088625461460115]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_7caef7d4948aa54d0bbafe03a1f4e002.bindTooltip(
+                `<div>
+                     H3 Index: 898c10622d3ffff | Mean BSI: 0.284
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_1359b149d9627c538abaee117dcaff14 = L.polygon(
+                [[106.73701564837309, -6.344781648245816], [106.73659868967049, -6.3430490698880595], [106.73482312616412, -6.342613776053304], [106.73346452613676, -6.343911087465131], [106.73388150975906, -6.345643669845178], [106.73565706848949, -6.346078936791779], [106.73701564837309, -6.344781648245816]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_1359b149d9627c538abaee117dcaff14.bindTooltip(
+                `<div>
+                     H3 Index: 898c1062557ffff | Mean BSI: 0.249
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_1757936d969a21783d0ae0dc542845f0 = L.polygon(
+                [[106.73324925294582, -6.356900445219521], [106.73283227908335, -6.355168074865844], [106.73105673468665, -6.3547328885731], [106.72969816893274, -6.356030099515774], [106.73011516771098, -6.357762473878331], [106.73189070732782, -6.358197633289988], [106.73324925294582, -6.356900445219521]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_1757936d969a21783d0ae0dc542845f0.bindTooltip(
+                `<div>
+                     H3 Index: 898c1062587ffff | Mean BSI: 0.371
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_d4db710c7bfd8c2fddbe9b2db7e3be36 = L.polygon(
+                [[106.73105673468665, -6.3547328885731], [106.73063973969684, -6.353000462195152], [106.72886415403768, -6.352565242751915], [106.72750556815127, -6.353862476565955], [106.72792258805605, -6.355594906951218], [106.72969816893274, -6.356030099515774], [106.73105673468665, -6.3547328885731]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_d4db710c7bfd8c2fddbe9b2db7e3be36.bindTooltip(
+                `<div>
+                     H3 Index: 898c10625bbffff | Mean BSI: 0.477
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_f91c13e3a362119b3f0d15399bc8f853 = L.polygon(
+                [[106.76177847722045, -6.3296573915083405], [106.76136170439962, -6.3279246855890205], [106.75958638237789, -6.3274893547258895], [106.75822783792546, -6.3287867567053375], [106.75864463568134, -6.330519466691469], [106.76041995295506, -6.330954770631989], [106.76177847722045, -6.3296573915083405]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_f91c13e3a362119b3f0d15399bc8f853.bindTooltip(
+                `<div>
+                     H3 Index: 898c1062687ffff | Mean BSI: 0.239
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_a1e0fab60c41cfd1e7118b5c97cd9c50 = L.polygon(
+                [[106.76992960105409, -6.321872926627645], [106.76951288571054, -6.32014012500333], [106.76773762738497, -6.319704752726809], [106.76637908914232, -6.321002209009733], [106.76679582942643, -6.322735014717449], [106.7685710830131, -6.323170360059476], [106.76992960105409, -6.321872926627645]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_a1e0fab60c41cfd1e7118b5c97cd9c50.bindTooltip(
+                `<div>
+                     H3 Index: 898c10626c3ffff | Mean BSI: 0.532
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_db9f25a4aa7fe683715c22eef2c984d5 = L.polygon(
+                [[106.68217484587187, -6.3182871065418444], [106.68175739592635, -6.31655366075723], [106.67998095909509, -6.316117826726146], [106.67862197704939, -6.317415465303078], [106.67903945188998, -6.3191489150518825], [106.68081588388164, -6.319584722260217], [106.68217484587187, -6.3182871065418444]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_db9f25a4aa7fe683715c22eef2c984d5.bindTooltip(
+                `<div>
+                     H3 Index: 898c1062847ffff | Mean BSI: 0.270
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_2e290eb186c6459102cccbf2fbb1c978 = L.polygon(
+                [[106.67527354695656, -6.331272497297663], [106.67485605702444, -6.329539255420168], [106.67307960323808, -6.329103522419674], [106.67172064423143, -6.330401058108855], [106.67213815905293, -6.332134303932198], [106.67391460799217, -6.332570010121168], [106.67527354695656, -6.331272497297663]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_2e290eb186c6459102cccbf2fbb1c978.bindTooltip(
+                `<div>
+                     H3 Index: 898c10628a3ffff | Mean BSI: 0.395
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_c002578629945f7c90116cd368672d03 = L.polygon(
+                [[106.66022608543436, -6.324319587075169], [106.65980846126087, -6.322586113644814], [106.6580317702979, -6.322150235943042], [106.65667270837348, -6.323447858465756], [106.6570903574295, -6.325181335825761], [106.65886704352788, -6.3256171867340445], [106.66022608543436, -6.324319587075169]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_c002578629945f7c90116cd368672d03.bindTooltip(
+                `<div>
+                     H3 Index: 898c1062947ffff | Mean BSI: 0.263
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_9b0910a368d515e706f32fcf56b040b6 = L.polygon(
+                [[106.66587482957785, -6.306131840733436], [106.66545722801725, -6.30439805559641], [106.66368050788734, -6.303962017096781], [106.66232139417723, -6.305259790538849], [106.66273902062623, -6.306993579625625], [106.66451573589744, -6.30742959132123], [106.66587482957785, -6.306131840733436]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_9b0910a368d515e706f32fcf56b040b6.bindTooltip(
+                `<div>
+                     H3 Index: 898c1062b0bffff | Mean BSI: 0.141
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_48c0d1bd6c51cdac05506acc64b4caa2 = L.polygon(
+                [[106.66775784346727, -6.300068641998935], [106.66734024944718, -6.298334753018616], [106.66556351960287, -6.297898660905641], [106.66420438863584, -6.299196484581182], [106.66462200754631, -6.300930377517959], [106.6663987325339, -6.301366442823384], [106.66775784346727, -6.300068641998935]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_48c0d1bd6c51cdac05506acc64b4caa2.bindTooltip(
+                `<div>
+                     H3 Index: 898c1062b4fffff | Mean BSI: 0.501
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_65fef7c286e32de690197b1c7145a47f = L.polygon(
+                [[106.66210895055929, -6.318257313403453], [106.66169133392198, -6.316523736041426], [106.65991463323275, -6.316087804747381], [106.65855555404393, -6.317385477613039], [106.65897319556574, -6.3191190589114195], [106.66074989139233, -6.319554963408451], [106.66210895055929, -6.318257313403453]],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.2}
+            ).addTo(feature_group_9b31d5c98a98468cfb413a40aaa6bfbe);
+        
+    
+            polygon_65fef7c286e32de690197b1c7145a47f.bindTooltip(
+                `<div>
+                     H3 Index: 898c1062bb3ffff | Mean BSI: 0.566
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_9b31d5c98a98468cfb413a40aaa6bfbe.addTo(map_8fb4ebf2e8066e03c68e8768be07e5d2);
+        
+    
+            var feature_group_7edafb03b019e5e09d1e040cc371aad9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b1d0ba74a5fd01201e2f59b82bff3499 = L.marker(
+                [-6.3250784, 106.6591211],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_ea62407d0fa2be6a40b882e487737280 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_353a07ca44ee685390bb1f63e9032f12 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_6e6b73349725bcd079ca1d31c9032253 = $(`<div id="html_6e6b73349725bcd079ca1d31c9032253" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">TPA Cipeucang</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.32508, 106.65912<br>             <b>Bare Soil Index (BSI):</b> 0.2634<br>             <b>Status Risiko:</b> <span style="color:#2ecc71;">Low Risk</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3250784,106.6591211" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_353a07ca44ee685390bb1f63e9032f12.setContent(html_6e6b73349725bcd079ca1d31c9032253);
+            
+        
+
+        marker_b1d0ba74a5fd01201e2f59b82bff3499.bindPopup(popup_353a07ca44ee685390bb1f63e9032f12)
+        ;
+
+        
+    
+    
+            marker_b1d0ba74a5fd01201e2f59b82bff3499.bindTooltip(
+                `<div>
+                     Sampel: TPA Cipeucang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b1d0ba74a5fd01201e2f59b82bff3499.setIcon(icon_ea62407d0fa2be6a40b882e487737280);
+            
+    
+            var marker_fc69935cb9f72231a8c9dc89f3d98391 = L.marker(
+                [-6.3207309, 106.7681427],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_344d376096bd6b4b0dc16361fce05ee2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a503d58f0b3466b6d1d4dbccee47821 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_266340ef6fdcebcab3b0ea2c6b063b44 = $(`<div id="html_266340ef6fdcebcab3b0ea2c6b063b44" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Jasa buang puing dan sampah proyek</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.32073, 106.76814<br>             <b>Bare Soil Index (BSI):</b> 0.5316<br>             <b>Status Risiko:</b> <span style="color:#e74c3c;font-weight:bold;">HIGH RISK</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3207309,106.7681427" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_3a503d58f0b3466b6d1d4dbccee47821.setContent(html_266340ef6fdcebcab3b0ea2c6b063b44);
+            
+        
+
+        marker_fc69935cb9f72231a8c9dc89f3d98391.bindPopup(popup_3a503d58f0b3466b6d1d4dbccee47821)
+        ;
+
+        
+    
+    
+            marker_fc69935cb9f72231a8c9dc89f3d98391.bindTooltip(
+                `<div>
+                     Hotspot: Jasa buang puing dan sampah proyek
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fc69935cb9f72231a8c9dc89f3d98391.setIcon(icon_344d376096bd6b4b0dc16361fce05ee2);
+            
+    
+            var marker_13388531c64d2dfa3213d56bf75535e2 = L.marker(
+                [-6.3323225, 106.6731365],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_14f39a9ee198901fcdab64d3e2b9f0de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e894fafe28efe3574c76b34e22697c27 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_97dd8ebcadd7c911d7d03b5afe1bb9c9 = $(`<div id="html_97dd8ebcadd7c911d7d03b5afe1bb9c9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Tempat Pembuangan Sampah Terpadu 3R Batan Indah</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.33232, 106.67314<br>             <b>Bare Soil Index (BSI):</b> 0.3950<br>             <b>Status Risiko:</b> <span style="color:#e74c3c;font-weight:bold;">HIGH RISK</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3323225,106.6731365" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_e894fafe28efe3574c76b34e22697c27.setContent(html_97dd8ebcadd7c911d7d03b5afe1bb9c9);
+            
+        
+
+        marker_13388531c64d2dfa3213d56bf75535e2.bindPopup(popup_e894fafe28efe3574c76b34e22697c27)
+        ;
+
+        
+    
+    
+            marker_13388531c64d2dfa3213d56bf75535e2.bindTooltip(
+                `<div>
+                     Hotspot: Tempat Pembuangan Sampah Terpadu 3R Batan Indah
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13388531c64d2dfa3213d56bf75535e2.setIcon(icon_14f39a9ee198901fcdab64d3e2b9f0de);
+            
+    
+            var marker_1b597ff25027d9d58468ff4a647daeb4 = L.marker(
+                [-6.2773319, 106.6754983],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_90bb241f21fd2bbc395f4abfeff29594 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1d6c459933cc7fc896c82081f3c45da = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_f7a34823eca13fbb7bf26384adf21485 = $(`<div id="html_f7a34823eca13fbb7bf26384adf21485" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Pembuangan Sampah dan Urukan</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.27733, 106.67550<br>             <b>Bare Soil Index (BSI):</b> 0.1607<br>             <b>Status Risiko:</b> <span style="color:#e74c3c;font-weight:bold;">HIGH RISK</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.2773319,106.6754983" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_d1d6c459933cc7fc896c82081f3c45da.setContent(html_f7a34823eca13fbb7bf26384adf21485);
+            
+        
+
+        marker_1b597ff25027d9d58468ff4a647daeb4.bindPopup(popup_d1d6c459933cc7fc896c82081f3c45da)
+        ;
+
+        
+    
+    
+            marker_1b597ff25027d9d58468ff4a647daeb4.bindTooltip(
+                `<div>
+                     Hotspot: Pembuangan Sampah dan Urukan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1b597ff25027d9d58468ff4a647daeb4.setIcon(icon_90bb241f21fd2bbc395f4abfeff29594);
+            
+    
+            var marker_ed14e81a656911541c2891c21a2730da = L.marker(
+                [-6.2761582, 106.675221],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_63e98a1e907de6369654d65c7439738a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0720c6fc82fa9f940f7c6624b0707170 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_5d59a759cc3c1dc080c3dc6aa0fb855a = $(`<div id="html_5d59a759cc3c1dc080c3dc6aa0fb855a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Pengolahan Sampah dan Rongsok TOPA</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.27616, 106.67522<br>             <b>Bare Soil Index (BSI):</b> 0.2102<br>             <b>Status Risiko:</b> <span style="color:#2ecc71;">Low Risk</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.2761582,106.675221" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_0720c6fc82fa9f940f7c6624b0707170.setContent(html_5d59a759cc3c1dc080c3dc6aa0fb855a);
+            
+        
+
+        marker_ed14e81a656911541c2891c21a2730da.bindPopup(popup_0720c6fc82fa9f940f7c6624b0707170)
+        ;
+
+        
+    
+    
+            marker_ed14e81a656911541c2891c21a2730da.bindTooltip(
+                `<div>
+                     Sampel: Pengolahan Sampah dan Rongsok TOPA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ed14e81a656911541c2891c21a2730da.setIcon(icon_63e98a1e907de6369654d65c7439738a);
+            
+    
+            var marker_a290ab8f68d34265547eb9f7c30bc859 = L.marker(
+                [-6.3050074, 106.6627716],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_df0fb8e2f13d3544cdc261b51787c8bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79a63c8865d4ee9cf0504069ffc4854b = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_8f2339359deec1f5ecc7efa00b07f9cf = $(`<div id="html_8f2339359deec1f5ecc7efa00b07f9cf" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Pilah Sampah</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.30501, 106.66277<br>             <b>Bare Soil Index (BSI):</b> 0.1408<br>             <b>Status Risiko:</b> <span style="color:#e74c3c;font-weight:bold;">HIGH RISK</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3050074,106.6627716" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_79a63c8865d4ee9cf0504069ffc4854b.setContent(html_8f2339359deec1f5ecc7efa00b07f9cf);
+            
+        
+
+        marker_a290ab8f68d34265547eb9f7c30bc859.bindPopup(popup_79a63c8865d4ee9cf0504069ffc4854b)
+        ;
+
+        
+    
+    
+            marker_a290ab8f68d34265547eb9f7c30bc859.bindTooltip(
+                `<div>
+                     Hotspot: Pilah Sampah
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a290ab8f68d34265547eb9f7c30bc859.setIcon(icon_df0fb8e2f13d3544cdc261b51787c8bb);
+            
+    
+            var marker_6d5cb106e83ec05bff6f25c1bd08258d = L.marker(
+                [-6.3172127, 106.6795523],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_306e213742f1f761bc607e9e92567bb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80864a1b51927f48a0aea9be6db4faef = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_0e19d61f1b32473ffde80e66e7ddce05 = $(`<div id="html_0e19d61f1b32473ffde80e66e7ddce05" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Pilah Sampah</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.31721, 106.67955<br>             <b>Bare Soil Index (BSI):</b> 0.2697<br>             <b>Status Risiko:</b> <span style="color:#e74c3c;font-weight:bold;">HIGH RISK</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3172127,106.6795523" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_80864a1b51927f48a0aea9be6db4faef.setContent(html_0e19d61f1b32473ffde80e66e7ddce05);
+            
+        
+
+        marker_6d5cb106e83ec05bff6f25c1bd08258d.bindPopup(popup_80864a1b51927f48a0aea9be6db4faef)
+        ;
+
+        
+    
+    
+            marker_6d5cb106e83ec05bff6f25c1bd08258d.bindTooltip(
+                `<div>
+                     Hotspot: Pilah Sampah
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6d5cb106e83ec05bff6f25c1bd08258d.setIcon(icon_306e213742f1f761bc607e9e92567bb2);
+            
+    
+            var marker_dd545ceb94c661f19881d9369ed49f40 = L.marker(
+                [-6.2557865, 106.7052208],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_bb03de1534abff8263292ab689350d12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12470491edeac3955f653e39073836ab = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_1af2e0b48fa504c695a1bc19fc590331 = $(`<div id="html_1af2e0b48fa504c695a1bc19fc590331" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Lahan kosong kelurahan pondok aren</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.25579, 106.70522<br>             <b>Bare Soil Index (BSI):</b> 0.2988<br>             <b>Status Risiko:</b> <span style="color:#2ecc71;">Low Risk</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.2557865,106.7052208" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_12470491edeac3955f653e39073836ab.setContent(html_1af2e0b48fa504c695a1bc19fc590331);
+            
+        
+
+        marker_dd545ceb94c661f19881d9369ed49f40.bindPopup(popup_12470491edeac3955f653e39073836ab)
+        ;
+
+        
+    
+    
+            marker_dd545ceb94c661f19881d9369ed49f40.bindTooltip(
+                `<div>
+                     Sampel: Lahan kosong kelurahan pondok aren
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd545ceb94c661f19881d9369ed49f40.setIcon(icon_bb03de1534abff8263292ab689350d12);
+            
+    
+            var marker_c5e3868e23b9e1933e9b2d544ea79728 = L.marker(
+                [-6.3125598, 106.7463458],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_789d68400d685932a15026333ce637a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76183cbad8b045a60e4206555f45244b = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_659329f702887dcc292669bdbc189aff = $(`<div id="html_659329f702887dcc292669bdbc189aff" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Pasar Ciputat</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.31256, 106.74635<br>             <b>Bare Soil Index (BSI):</b> 0.2448<br>             <b>Status Risiko:</b> <span style="color:#2ecc71;">Low Risk</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3125598,106.7463458" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_76183cbad8b045a60e4206555f45244b.setContent(html_659329f702887dcc292669bdbc189aff);
+            
+        
+
+        marker_c5e3868e23b9e1933e9b2d544ea79728.bindPopup(popup_76183cbad8b045a60e4206555f45244b)
+        ;
+
+        
+    
+    
+            marker_c5e3868e23b9e1933e9b2d544ea79728.bindTooltip(
+                `<div>
+                     Sampel: Pasar Ciputat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c5e3868e23b9e1933e9b2d544ea79728.setIcon(icon_789d68400d685932a15026333ce637a3);
+            
+    
+            var marker_ac7b836b08e8e7691d8d73e7a782dd97 = L.marker(
+                [-6.3004334, 106.6659178],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_b53c42616f6233f864e098a087c8572c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6f9d843011d0f82a1fb6efdf13e67c2 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_f4bf5bc56fbff1e4300b7e75ef88c2d6 = $(`<div id="html_f4bf5bc56fbff1e4300b7e75ef88c2d6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Lapangan Sunburst Serpong</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.30043, 106.66592<br>             <b>Bare Soil Index (BSI):</b> 0.5012<br>             <b>Status Risiko:</b> <span style="color:#2ecc71;">Low Risk</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3004334,106.6659178" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_e6f9d843011d0f82a1fb6efdf13e67c2.setContent(html_f4bf5bc56fbff1e4300b7e75ef88c2d6);
+            
+        
+
+        marker_ac7b836b08e8e7691d8d73e7a782dd97.bindPopup(popup_e6f9d843011d0f82a1fb6efdf13e67c2)
+        ;
+
+        
+    
+    
+            marker_ac7b836b08e8e7691d8d73e7a782dd97.bindTooltip(
+                `<div>
+                     Sampel: Lapangan Sunburst Serpong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ac7b836b08e8e7691d8d73e7a782dd97.setIcon(icon_b53c42616f6233f864e098a087c8572c);
+            
+    
+            var marker_cd0908c9237c89e238f1f5f98f5e983c = L.marker(
+                [-6.3067431, 106.7545422],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_518c80f8f361964746d561d22ae59a26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6696d02027688c427b8b45befaaeb23 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_2f6723e0b889a01d55ba59813b849e70 = $(`<div id="html_2f6723e0b889a01d55ba59813b849e70" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">UIN Syarif Hidayatullah</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.30674, 106.75454<br>             <b>Bare Soil Index (BSI):</b> 0.2841<br>             <b>Status Risiko:</b> <span style="color:#2ecc71;">Low Risk</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3067431,106.7545422" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_a6696d02027688c427b8b45befaaeb23.setContent(html_2f6723e0b889a01d55ba59813b849e70);
+            
+        
+
+        marker_cd0908c9237c89e238f1f5f98f5e983c.bindPopup(popup_a6696d02027688c427b8b45befaaeb23)
+        ;
+
+        
+    
+    
+            marker_cd0908c9237c89e238f1f5f98f5e983c.bindTooltip(
+                `<div>
+                     Sampel: UIN Syarif Hidayatullah
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cd0908c9237c89e238f1f5f98f5e983c.setIcon(icon_518c80f8f361964746d561d22ae59a26);
+            
+    
+            var marker_fb5304d9980e4dd49473a5bd70fcea51 = L.marker(
+                [-6.3443675, 106.7350955],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_c41c8bfc58029cb190d1b45adf15c95a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b37611e7527113931b63dc3d593a9b45 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_57d4cf27f3d3b962d37592f9e0afe9a2 = $(`<div id="html_57d4cf27f3d3b962d37592f9e0afe9a2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Alun Alun Pamulang</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.34437, 106.73510<br>             <b>Bare Soil Index (BSI):</b> 0.2492<br>             <b>Status Risiko:</b> <span style="color:#e74c3c;font-weight:bold;">HIGH RISK</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3443675,106.7350955" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_b37611e7527113931b63dc3d593a9b45.setContent(html_57d4cf27f3d3b962d37592f9e0afe9a2);
+            
+        
+
+        marker_fb5304d9980e4dd49473a5bd70fcea51.bindPopup(popup_b37611e7527113931b63dc3d593a9b45)
+        ;
+
+        
+    
+    
+            marker_fb5304d9980e4dd49473a5bd70fcea51.bindTooltip(
+                `<div>
+                     Hotspot: Alun Alun Pamulang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb5304d9980e4dd49473a5bd70fcea51.setIcon(icon_c41c8bfc58029cb190d1b45adf15c95a);
+            
+    
+            var marker_237becde310ad775da9614907724f41c = L.marker(
+                [-6.2882235, 106.6759854],
+                {
+}
+            ).addTo(feature_group_7edafb03b019e5e09d1e040cc371aad9);
+        
+    
+            var icon_9f444053693482a23c0eda797ead262e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da085e66baa5b8f18ba88f90f0005a5f = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_b7c3524289a3dd328cb60f5e93040433 = $(`<div id="html_b7c3524289a3dd328cb60f5e93040433" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Taman Kota 1 BSD</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.28822, 106.67599<br>             <b>Bare Soil Index (BSI):</b> 0.3696<br>             <b>Status Risiko:</b> <span style="color:#e74c3c;font-weight:bold;">HIGH RISK</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.2882235,106.6759854" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_da085e66baa5b8f18ba88f90f0005a5f.setContent(html_b7c3524289a3dd328cb60f5e93040433);
+            
+        
+
+        marker_237becde310ad775da9614907724f41c.bindPopup(popup_da085e66baa5b8f18ba88f90f0005a5f)
+        ;
+
+        
+    
+    
+            marker_237becde310ad775da9614907724f41c.bindTooltip(
+                `<div>
+                     Hotspot: Taman Kota 1 BSD
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_237becde310ad775da9614907724f41c.setIcon(icon_9f444053693482a23c0eda797ead262e);
+            
+    
+            feature_group_7edafb03b019e5e09d1e040cc371aad9.addTo(map_8fb4ebf2e8066e03c68e8768be07e5d2);
+        
+    
+            var feature_group_93ccab805979c5b7d5a832792fbc4f40 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_730456afae48243b2b3688823ec5e822 = L.marker(
+                [-6.3295474, 106.7585284],
+                {
+}
+            ).addTo(feature_group_93ccab805979c5b7d5a832792fbc4f40);
+        
+    
+            var icon_e0b167544e783fd707b212cae66cade3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bed66425f70de7b5a9f83486b214a5b1 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_d4007ffe07c27ee6f6e7290c30a70488 = $(`<div id="html_d4007ffe07c27ee6f6e7290c30a70488" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">TPS3R CIPAYUNG 01</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.32955, 106.75853<br>             <b>Bare Soil Index (BSI):</b> 0.2390<br>             <b>Status Risiko:</b> <span style="color:#2ecc71;">Low Risk</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3295474,106.7585284" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_bed66425f70de7b5a9f83486b214a5b1.setContent(html_d4007ffe07c27ee6f6e7290c30a70488);
+            
+        
+
+        marker_730456afae48243b2b3688823ec5e822.bindPopup(popup_bed66425f70de7b5a9f83486b214a5b1)
+        ;
+
+        
+    
+    
+            marker_730456afae48243b2b3688823ec5e822.bindTooltip(
+                `<div>
+                     Fasilitas: TPS3R CIPAYUNG 01
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_730456afae48243b2b3688823ec5e822.setIcon(icon_e0b167544e783fd707b212cae66cade3);
+            
+    
+            var marker_a7a5bb33f481b6ff6e3bf13ae9397e68 = L.marker(
+                [-6.3280337, 106.7236208],
+                {
+}
+            ).addTo(feature_group_93ccab805979c5b7d5a832792fbc4f40);
+        
+    
+            var icon_a34466e3cb7a43550a01087adcead492 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_686e86f02dffcc906d99176fc11509df = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_ff222b6c2b1794e371ebab0ebef009e8 = $(`<div id="html_ff222b6c2b1794e371ebab0ebef009e8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">TPS 3R KSM Rumah Kompos Vila Pamulang Mas Tahap 2</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.32803, 106.72362<br>             <b>Bare Soil Index (BSI):</b> 0.4248<br>             <b>Status Risiko:</b> <span style="color:#e74c3c;font-weight:bold;">HIGH RISK</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3280337,106.7236208" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_686e86f02dffcc906d99176fc11509df.setContent(html_ff222b6c2b1794e371ebab0ebef009e8);
+            
+        
+
+        marker_a7a5bb33f481b6ff6e3bf13ae9397e68.bindPopup(popup_686e86f02dffcc906d99176fc11509df)
+        ;
+
+        
+    
+    
+            marker_a7a5bb33f481b6ff6e3bf13ae9397e68.bindTooltip(
+                `<div>
+                     Fasilitas: TPS 3R KSM Rumah Kompos Vila Pamulang Mas Tahap 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a7a5bb33f481b6ff6e3bf13ae9397e68.setIcon(icon_a34466e3cb7a43550a01087adcead492);
+            
+    
+            var marker_8884c3e8403f22658dc098e2cc18a693 = L.marker(
+                [-6.3415269, 106.7225557],
+                {
+}
+            ).addTo(feature_group_93ccab805979c5b7d5a832792fbc4f40);
+        
+    
+            var icon_e3917f5b22688488285c462a7aa408f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c81915b8a9e172153d143bde8a2ae6d = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_08dcb2c88f728f14d3929ec527e79ec5 = $(`<div id="html_08dcb2c88f728f14d3929ec527e79ec5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">TPS 3R Berseri Benda Baru</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.34153, 106.72256<br>             <b>Bare Soil Index (BSI):</b> 0.3592<br>             <b>Status Risiko:</b> <span style="color:#e74c3c;font-weight:bold;">HIGH RISK</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3415269,106.7225557" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_7c81915b8a9e172153d143bde8a2ae6d.setContent(html_08dcb2c88f728f14d3929ec527e79ec5);
+            
+        
+
+        marker_8884c3e8403f22658dc098e2cc18a693.bindPopup(popup_7c81915b8a9e172153d143bde8a2ae6d)
+        ;
+
+        
+    
+    
+            marker_8884c3e8403f22658dc098e2cc18a693.bindTooltip(
+                `<div>
+                     Fasilitas: TPS 3R Berseri Benda Baru
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8884c3e8403f22658dc098e2cc18a693.setIcon(icon_e3917f5b22688488285c462a7aa408f6);
+            
+    
+            var marker_29d0655bfe3c5fa67534149f44feb5eb = L.marker(
+                [-6.3579707, 106.7311535],
+                {
+}
+            ).addTo(feature_group_93ccab805979c5b7d5a832792fbc4f40);
+        
+    
+            var icon_6843820ce47157e3d6dd0c3b56df9b66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8cbe8be1264a431c24427385da1564a = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_0e51146d0c5955b60c7be86a9325bd10 = $(`<div id="html_0e51146d0c5955b60c7be86a9325bd10" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">TPS 3R Flamboyan</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.35797, 106.73115<br>             <b>Bare Soil Index (BSI):</b> 0.3715<br>             <b>Status Risiko:</b> <span style="color:#e74c3c;font-weight:bold;">HIGH RISK</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3579707,106.7311535" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_d8cbe8be1264a431c24427385da1564a.setContent(html_0e51146d0c5955b60c7be86a9325bd10);
+            
+        
+
+        marker_29d0655bfe3c5fa67534149f44feb5eb.bindPopup(popup_d8cbe8be1264a431c24427385da1564a)
+        ;
+
+        
+    
+    
+            marker_29d0655bfe3c5fa67534149f44feb5eb.bindTooltip(
+                `<div>
+                     Fasilitas: TPS 3R Flamboyan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_29d0655bfe3c5fa67534149f44feb5eb.setIcon(icon_6843820ce47157e3d6dd0c3b56df9b66);
+            
+    
+            var marker_cd6184f2032ef69b1fade465313bb239 = L.marker(
+                [-6.2355814, 106.703054],
+                {
+}
+            ).addTo(feature_group_93ccab805979c5b7d5a832792fbc4f40);
+        
+    
+            var icon_156e9ec682494b6de1a97457cbb8b1d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cece0309e27b7043bf7c106703b9a7e2 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_006d4cbb3ad3481358a15bb7b2da9e6a = $(`<div id="html_006d4cbb3ad3481358a15bb7b2da9e6a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">TPST Ciledug</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.23558, 106.70305<br>             <b>Bare Soil Index (BSI):</b> 0.2050<br>             <b>Status Risiko:</b> <span style="color:#2ecc71;">Low Risk</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.2355814,106.703054" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_cece0309e27b7043bf7c106703b9a7e2.setContent(html_006d4cbb3ad3481358a15bb7b2da9e6a);
+            
+        
+
+        marker_cd6184f2032ef69b1fade465313bb239.bindPopup(popup_cece0309e27b7043bf7c106703b9a7e2)
+        ;
+
+        
+    
+    
+            marker_cd6184f2032ef69b1fade465313bb239.bindTooltip(
+                `<div>
+                     Fasilitas: TPST Ciledug
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cd6184f2032ef69b1fade465313bb239.setIcon(icon_156e9ec682494b6de1a97457cbb8b1d6);
+            
+    
+            var marker_96da6cedc32a1f9915c0a59a54e90d45 = L.marker(
+                [-6.3190684, 106.6592795],
+                {
+}
+            ).addTo(feature_group_93ccab805979c5b7d5a832792fbc4f40);
+        
+    
+            var icon_2970a9a677c220d5b6c1107e2de46f09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea75fad3ddf9acee1ea308b5137bb95e = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_ba3d215cf3568d72aa19d6afd85b116e = $(`<div id="html_ba3d215cf3568d72aa19d6afd85b116e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">TPST Abu & Co</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.31907, 106.65928<br>             <b>Bare Soil Index (BSI):</b> 0.5660<br>             <b>Status Risiko:</b> <span style="color:#2ecc71;">Low Risk</span><br>             <b>Rekomendasi TPS3R:</b> <span style="color:#2ecc71;font-weight:bold;">YA</span><br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3190684,106.6592795" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_ea75fad3ddf9acee1ea308b5137bb95e.setContent(html_ba3d215cf3568d72aa19d6afd85b116e);
+            
+        
+
+        marker_96da6cedc32a1f9915c0a59a54e90d45.bindPopup(popup_ea75fad3ddf9acee1ea308b5137bb95e)
+        ;
+
+        
+    
+    
+            marker_96da6cedc32a1f9915c0a59a54e90d45.bindTooltip(
+                `<div>
+                     Fasilitas: TPST Abu & Co
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_96da6cedc32a1f9915c0a59a54e90d45.setIcon(icon_2970a9a677c220d5b6c1107e2de46f09);
+            
+    
+            var marker_cda3ca9d1b836fb5a3499fb780aee2ff = L.marker(
+                [-6.3548005, 106.7291253],
+                {
+}
+            ).addTo(feature_group_93ccab805979c5b7d5a832792fbc4f40);
+        
+    
+            var icon_6938f9ba76e595463d2edcdd9f123b41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91b98b40e932eeec859806ccb1c52dbb = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_25b90e29e8281673252db40d7ef43694 = $(`<div id="html_25b90e29e8281673252db40d7ef43694" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Griya Bersih Asri TPS3R</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.35480, 106.72913<br>             <b>Bare Soil Index (BSI):</b> 0.4766<br>             <b>Status Risiko:</b> <span style="color:#e74c3c;font-weight:bold;">HIGH RISK</span><br>             <b>Rekomendasi TPS3R:</b> Tidak<br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.3548005,106.7291253" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_91b98b40e932eeec859806ccb1c52dbb.setContent(html_25b90e29e8281673252db40d7ef43694);
+            
+        
+
+        marker_cda3ca9d1b836fb5a3499fb780aee2ff.bindPopup(popup_91b98b40e932eeec859806ccb1c52dbb)
+        ;
+
+        
+    
+    
+            marker_cda3ca9d1b836fb5a3499fb780aee2ff.bindTooltip(
+                `<div>
+                     Fasilitas: Griya Bersih Asri TPS3R
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cda3ca9d1b836fb5a3499fb780aee2ff.setIcon(icon_6938f9ba76e595463d2edcdd9f123b41);
+            
+    
+            var marker_31b6640e8e1244e3193679495c44624b = L.marker(
+                [-6.2884449, 106.7283636],
+                {
+}
+            ).addTo(feature_group_93ccab805979c5b7d5a832792fbc4f40);
+        
+    
+            var icon_3f52ca265194fb7b1f2f69866661abce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_752f5f1424485f139444d03064e2cb0d = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_789d64cdcb9dfedcc1571cc1c5305aa9 = $(`<div id="html_789d64cdcb9dfedcc1571cc1c5305aa9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Simpang Pak OGAH Pondok Aren</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.28844, 106.72836<br>             <b>Bare Soil Index (BSI):</b> 0.5522<br>             <b>Status Risiko:</b> <span style="color:#e74c3c;font-weight:bold;">HIGH RISK</span><br>             <b>Rekomendasi TPS3R:</b> <span style="color:#2ecc71;font-weight:bold;">YA</span><br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.2884449,106.7283636" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_752f5f1424485f139444d03064e2cb0d.setContent(html_789d64cdcb9dfedcc1571cc1c5305aa9);
+            
+        
+
+        marker_31b6640e8e1244e3193679495c44624b.bindPopup(popup_752f5f1424485f139444d03064e2cb0d)
+        ;
+
+        
+    
+    
+            marker_31b6640e8e1244e3193679495c44624b.bindTooltip(
+                `<div>
+                     Fasilitas: Simpang Pak OGAH Pondok Aren
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31b6640e8e1244e3193679495c44624b.setIcon(icon_3f52ca265194fb7b1f2f69866661abce);
+            
+    
+            var marker_c4ca840dd9bedc851505b8c9d1f8cab0 = L.marker(
+                [-6.2792612, 106.7096358],
+                {
+}
+            ).addTo(feature_group_93ccab805979c5b7d5a832792fbc4f40);
+        
+    
+            var icon_8bc5cb79029fd2ad429d895ff0f3d68d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95d1a7ec8c679be041230b7994bf6fde = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_726837b17adac94aff5879c3c351b007 = $(`<div id="html_726837b17adac94aff5879c3c351b007" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px; font-size: 12px; line-height: 1.5;">             <b style="font-size: 13px; color: #2c3e50;">Bank SAMPAH KASUARI</b>             <hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;">             <b>Koordinat:</b> -6.27926, 106.70964<br>             <b>Bare Soil Index (BSI):</b> 0.5441<br>             <b>Status Risiko:</b> <span style="color:#2ecc71;">Low Risk</span><br>             <b>Rekomendasi TPS3R:</b> <span style="color:#2ecc71;font-weight:bold;">YA</span><br>             <div style="margin-top: 8px;">                 <a href="https://www.google.com/maps?q=-6.2792612,106.7096358" target="_blank" style="background:#34495e;color:white;padding:4px 10px;text-decoration:none;border-radius:4px;font-size:11px;display:inline-block;">Buka Google Maps ↗</a>             </div>         </div>         </div>`)[0];
+                popup_95d1a7ec8c679be041230b7994bf6fde.setContent(html_726837b17adac94aff5879c3c351b007);
+            
+        
+
+        marker_c4ca840dd9bedc851505b8c9d1f8cab0.bindPopup(popup_95d1a7ec8c679be041230b7994bf6fde)
+        ;
+
+        
+    
+    
+            marker_c4ca840dd9bedc851505b8c9d1f8cab0.bindTooltip(
+                `<div>
+                     Fasilitas: Bank SAMPAH KASUARI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c4ca840dd9bedc851505b8c9d1f8cab0.setIcon(icon_8bc5cb79029fd2ad429d895ff0f3d68d);
+            
+    
+            feature_group_93ccab805979c5b7d5a832792fbc4f40.addTo(map_8fb4ebf2e8066e03c68e8768be07e5d2);
+        
+    
+            var layer_control_a007bfd54fe8fa49302ea19673a7ebd0_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_65015b681634c6652ed9534bf7535b1a,
+                    "Google Satelit (High-Res)" : tile_layer_ae88b8fa02b2de437e52a00d226b0dcb,
+                },
+                overlays :  {
+                    "Grid H3 (Indeks BSI)" : feature_group_9b31d5c98a98468cfb413a40aaa6bfbe,
+                    "Hotspot Pembakaran Sampah Liar" : feature_group_7edafb03b019e5e09d1e040cc371aad9,
+                    "Rekomendasi TPS3R (P-Median)" : feature_group_93ccab805979c5b7d5a832792fbc4f40,
+                },
+            };
+            let layer_control_a007bfd54fe8fa49302ea19673a7ebd0 = L.control.layers(
+                layer_control_a007bfd54fe8fa49302ea19673a7ebd0_layers.base_layers,
+                layer_control_a007bfd54fe8fa49302ea19673a7ebd0_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_8fb4ebf2e8066e03c68e8768be07e5d2);
+
+        
+</script>
+</html>
